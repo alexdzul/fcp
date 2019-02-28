@@ -5,7 +5,7 @@ Lista de alumnos:
 ## Nombre y apellidos. 
 * Grecia 
 * Georgina
-* Hazael 
+* Hazael AkÃ© Hau
 * Citlali
 * Rocio
 * Jonathan Canchè Pool
