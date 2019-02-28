@@ -6,7 +6,7 @@ Lista de alumnos:
 * Grecia 
 * Georgina
 * Hazael 
-* Citlali
-* Rocio
+* Citlali Galaviz Dzul
+* Rocio Espadas Gomez
 * Jonathan
 * Wilberth
