@@ -16,5 +16,5 @@ Lista de alumnos:
 >>>>>>> b5ea2b5e2983a1ade68e8f8717a3d2d737c9f084
 * Citlali
 * Rocio
-* Jonathan
+* Jonathan Canchè Pool
 * Wilberth
