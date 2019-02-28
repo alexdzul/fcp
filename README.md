@@ -9,4 +9,4 @@ Lista de alumnos:
 * Citlali
 * Rocio
 * Jonathan
-* Wilberth
+* Wilberth Ku Poot
