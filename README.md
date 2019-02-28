@@ -5,7 +5,7 @@ Lista de alumnos:
 ## Nombre y apellidos. 
 * Grecia 
 * Georgina
-* Hazael 
+* Hazael Aké Hau
 * Citlali
 * Rocio
 * Jonathan
