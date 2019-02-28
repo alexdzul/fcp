@@ -8,5 +8,5 @@ Lista de alumnos:
 * Hazael 
 * Citlali
 * Rocio
-* Jonathan
+* Jonathan Canchè Pool
 * Wilberth
