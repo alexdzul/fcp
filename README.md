@@ -1,32 +1,12 @@
 # fcp
 Proyecto Django FCP
 
-<<<<<<< HEAD
 Lista de alumnos:
 ## Nombre y apellidos.
 * Grecia Ancona Interian
-* Georgina TÃºn GonzÃ¡lez
-* Hazael
-=======
-Lista de alumnos: 
-## Nombre y apellidos. 
-* Grecia 
-* Georgina
-<<<<<<< HEAD
-* Hazael 
+* Georgina Tún González
+* Hazael Aké Hau
 * Citlali Galaviz Dzul
 * Rocio Espadas Gomez
-* Jonathan
-=======
-* Hazael AkÃ© Hau
->>>>>>> b5ea2b5e2983a1ade68e8f8717a3d2d737c9f084
-* Citlali
-* Rocio
-<<<<<<< HEAD
-* Jonathan
-* Wilberth Ku Poot
-=======
 * Jonathan Canchè Pool
->>>>>>> 9bdd6ff9c2c330c37d3a981aaccabd01fb0dba3d
-* Wilberth
->>>>>>> ed5591a3c4e80928bb3431a59119ee9fe47f7eca
+* Wilberth Ku Poot
