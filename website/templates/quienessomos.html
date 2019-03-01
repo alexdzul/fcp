@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block contenido %}
-    <h1>¿Quienes Somos?</h1>
-    <p>Somos una empresa joven que buscamos llegar a cada uno de nuestros clientes en tiempo y forma
-    siempre brndando calidad en nuestros productos con los mejores precios en el mercado y sobre todo con atenciòn personalizada</p>
+    <h1>{{who.title}}</h1>
+    <p>{{ who.content }}</p>
 {% endblock contenido %}

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views import generic
+from .models import Whoweare
 
 
 class Index(View):
@@ -29,5 +29,7 @@ def contact (request):
 
 class Quienes(View):
         def get(self, request):
-            return render(request, 'quienessomos.html')
+            who = Whoweare.objects.all().first()
+            ctx = {'who':who}
+            return render(request, 'quienessomos.html',ctx)
 
