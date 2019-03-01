@@ -15,8 +15,9 @@ class ProductsAdmin(admin.ModelAdmin):
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('email',)
+    list_display = ('email', 'comentario')
     list_filter = ('email',)
     search_fields = ('email',)
+
 
 

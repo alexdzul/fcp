@@ -4,7 +4,10 @@ from sales.models import Product
 from django.http import Http404
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .models import Whoweare,Contact,Ourhistory
+from .models import Whoweare, Contact,Ourhistory
+
+
+
 
 class Index(View):
 
@@ -18,8 +21,10 @@ class ContactView(View):
 
     def post(self, request):
         email = request.POST['email']
+        comentario = request.POST['comentario']
         contact = Contact()
-        contact.email= email
+        contact.email = email
+        contact.comentario = comentario
         contact.save()
         ctx = {
             'save': True

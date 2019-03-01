@@ -4,6 +4,8 @@ from django.db import models
 
 class Contact (models.Model):
     email = models.EmailField(max_length=70, blank=True)
+    comentario = models.TextField(max_length=1000, null=True, blank=True)
+
 
 class Whoweare(models.Model):
     title = models.CharField(max_length=500)
