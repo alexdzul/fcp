@@ -1,0 +1,24 @@
+{%  extends 'base.html' %}
+
+{%  block titulo %}
+CONTACTO
+{%  endblock titulo %}
+
+{%  block contenido %}
+    ¿TIENEN ALGUNA DUDA?
+    DÉJANOS TU EMAIL:
+
+{% if mensaje %}
+    {{ mensaje }}
+
+{% endif %}
+
+<form method="post" novalidate>
+    {% csrf_token %}
+
+    {{ forms.as_p }}
+
+        <input type="submit" value="Enviar">
+
+</form>
+{% endblock %}
