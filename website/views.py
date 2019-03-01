@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.views.generic import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .models import Whoweare, Contact
+from .models import Whoweare, Contact,Ourhistory
+
+
+
 
 class Index(View):
 
@@ -31,4 +34,10 @@ class Quienes(View):
             who = Whoweare.objects.all().first()
             ctx = {'who':who}
             return render(request, 'quienessomos.html',ctx)
+
+class Historia(View):
+    def get(self, request):
+        our = Ourhistory.objects.all().first()
+        ctx = {'our': our}
+        return render(request, 'nuestrahistoria.html', ctx)
 
