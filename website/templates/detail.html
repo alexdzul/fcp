@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block titulo %}
+    Detalles
+{% endblock %}
+
+{% block contenido %}
+<h4>{{ question.product }}</h4>
+{% if error_message %}
+<p>
+    <strong>{{ error_message }}</strong>
+</p>
+{% endif %}
+
+{{ detail.name }}<br>{{ detail.price }}
+<br> <br>
+    <a href="/">Regresar</a>
+
+{% endblock %}

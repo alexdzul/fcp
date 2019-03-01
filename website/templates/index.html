@@ -7,7 +7,7 @@
 
     <ol class="list-group" type="1">
     {% for name in latest_product_list %}
-        <li class="list-group-item">{{ name.name }}     ${{ name.price }}
+        <li class="list-group-item"><a href="{{ name.id }}">{{ name.name }}     ${{ name.price }}
 
 </li>
     {% endfor %}

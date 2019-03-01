@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View
+from sales.models import Product
+from django.http import Http404
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Whoweare,Contact,Ourhistory
@@ -36,3 +38,10 @@ class Historia(View):
         ctx = {'our': our}
         return render(request, 'nuestrahistoria.html', ctx)
 
+def detail(request, product_id):
+    try:
+        product = Product.objects.get(pk=product_id)
+    except Product.DoesNotExist:
+        raise Http404("La pregunta no existe")
+    ctx = {'detail': product}
+    return render(request, 'detail.html', ctx)
