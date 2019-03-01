@@ -3,9 +3,11 @@
     <h1>Listado de productos</h1>
 
 {% if latest_product_list %}
+
+
     <ol class="list-group" type="1">
     {% for name in latest_product_list %}
-        <li class="list-group-item"><a href="/fcp/{{ name.id }}/">{{ name.name }}     ${{ name.price }}</a>
+        <li class="list-group-item">{{ name.name }}     ${{ name.price }}
 
 </li>
     {% endfor %}
