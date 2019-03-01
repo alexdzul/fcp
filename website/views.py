@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .models import Whoweare,Contact
+from .models import Whoweare, Contact
 
 class Index(View):
 
@@ -16,8 +16,10 @@ class ContactView(View):
 
     def post(self, request):
         email = request.POST['email']
+        comentario = request.POST['comentario']
         contact = Contact()
-        contact.email= email
+        contact.email = email
+        contact.comentario = comentario
         contact.save()
         ctx = {
             'save': True
