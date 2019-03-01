@@ -1,24 +1,28 @@
 {%  extends 'base.html' %}
 
 {%  block titulo %}
-CONTACTO
+Contact
 {%  endblock titulo %}
 
 {%  block contenido %}
-    ¿TIENEN ALGUNA DUDA?
-    DÉJANOS TU EMAIL:
+    <h1>¿TIENEN ALGUNA DUDA?</h1>
+    <p>DÉJANOS TU EMAIL</p>
 
-{% if mensaje %}
-    {{ mensaje }}
+    {% if save %}
+        <p>Enviado correctamente</p>
+    {% else %}
 
-{% endif %}
 
 <form method="post" novalidate>
-    {% csrf_token %}
 
-    {{ forms.as_p }}
+ {% csrf_token %}
+    <p>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email">
+    </p>
 
         <input type="submit" value="Enviar">
 
 </form>
+    {% endif %}
 {% endblock %}
