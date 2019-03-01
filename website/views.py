@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.views.generic import View
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views import generic
 
 
 class Index(View):
 
     def get(self, request):
         return render(request, 'index.html')
+
 
 def contact (request):
     ctx = {
@@ -23,3 +26,8 @@ def contact (request):
             ctx['mensaje'] = 'Por favor, corrige tus errores'
             ctx['form'] = form
     return render(request, 'contact.html', ctx)
+
+class Quienes(View):
+        def get(self, request):
+            return render(request, 'quienessomos.html')
+
