@@ -12,7 +12,11 @@ from .models import Whoweare, Contact,Ourhistory
 class Index(View):
 
     def get(self, request):
-        return render(request, 'index.html')
+        name = Product.objects.all()  # Question es el nombre de la class del modelo, .object es para acceder a los "objetos", .all()todos
+        contexto = {
+            'latest_product_list': name,
+        }
+        return render(request, 'index.html', contexto)
 
 class ContactView(View):
 
